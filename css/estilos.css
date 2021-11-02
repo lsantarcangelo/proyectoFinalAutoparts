@@ -1,0 +1,394 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+/* ENCABEZADO */
+header{
+    /* background-image: url(../multimedia/dark-honeycomb.png); */
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #434343 );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #434343 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logoTitulo{
+    display:flex;
+    justify-content: felx-start;
+    align-items: center;
+}
+
+
+.logoTitulo img{
+    width: 150px;
+    height: 130px;
+}
+
+.menu{
+    margin: 0;
+}
+
+nav{
+    text-align: center;
+    background-color: black;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+
+ul li a:hover {
+    background-color: red;
+    color: white;
+}
+
+
+ul{
+    color: white;
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 0;
+}
+
+.subMenu{
+    position: absolute;
+    display: none;
+}
+
+.subMenu li{
+    display: block;
+}
+
+.menu li:hover ul{
+    display: block;
+    background-color: black;
+    text-align: left;
+}
+
+
+
+/* TITULOS */
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+h2{
+    color: lightslategray;
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.textoPpal{
+    color:cornflowerblue;
+    font-size: 2rem;
+}
+
+
+
+/* TABLA */
+table{
+    border: 2px solid;
+}
+
+th{
+    background-color: dimgray;
+    color: ghostwhite;
+    border: 1px solid;
+}
+
+tr, td{
+    border: 1px solid;
+    font-size: 1.5rem;
+}
+
+
+a{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer{
+    font-size: 1.5rem;
+    color: white;
+    background-color: dimgray;
+    
+}
+
+footer p,a{
+    display: inline-block;
+}
+
+footer p{
+    width: 12%;
+    text-align: center;
+}
+
+.wsp{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #25d366;
+    font-size: 20px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+/* PAGINA INDEX */
+
+.contieneImagen{
+    padding: 0;
+}
+
+.ofertas{
+    background-color: lightslategray;
+    margin: 3px;
+    padding: 8px;
+}
+.ofertas h2{
+    color: firebrick;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.ofertas p{
+    color: white;
+    text-align:justify;
+}
+.noticias{
+    background-color: lightslategray;
+    text-align: justify;
+    margin: 3px;
+    padding: 8px;
+}
+.noticias h2{
+    color: firebrick;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.noticias p{
+    color: white;
+    text-align:justify;
+}
+
+/* PAGINA PRODUCTOS */
+
+/* TABLA */
+table{
+    border: 2px solid;
+}
+
+th{
+    background-color: dimgray;
+    color: ghostwhite;
+    border: 1px solid;
+}
+
+tr, td{
+    border: 1px solid;
+    font-size: 1.5rem;
+}
+
+a{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.estiloCarousel{
+    width: 400px;
+    margin: auto;
+}
+
+
+
+/* PAGINA MARCAS */
+
+.galeriaMarcas{
+    padding: 25px 25px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.galeriaMarcas h2{
+    margin-bottom: 20px;
+}
+
+.contieneLogos{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.logoMarcas{
+    /* width: 33.3%; */
+    text-align: center;
+    margin: 10px 50px;
+}
+
+.logoMarcas img {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+}
+
+.multimedia{
+    text-align: center;
+}
+
+/* PAGINA CONTACTO */
+
+.formulario{
+    width: auto;
+    margin: 50px;
+    padding: 50px;
+}
+
+.formulario h2{
+    margin-bottom: 20px;
+}
+
+.formulario button{
+    background-color: blueviolet;
+}
+
+.textoFormulario{
+    font-size: 1.5rem;
+}
+
+
+/* PAGINA EMPRESA */
+.gridMainEmpresa{
+    display: grid;
+    grid-template-areas: 
+    "historia fundadores"
+    "local local";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 300px 400px;
+}
+
+.historia{
+    grid-area: historia;
+    border: 2px solid black;
+    background-color: lightyellow;
+    margin: 20px 10px;
+    padding: 0 10px;
+}
+
+.fundadores{
+    grid-area: fundadores;
+    border: 2px solid black;
+    background-color: lightyellow;
+    margin: 20px 10px;
+    padding: 0 10px;
+}
+
+.local{
+    grid-area: local;
+    border: 2px solid black;
+    background-color: lightgray;
+    margin: 20px 10px;
+    padding: 0 10px;
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .logoTitulo h1{
+        margin: 0 10%;
+    }
+    .ofertas{
+        background-color: lightslategray;
+        padding: 8px;
+    }
+    .ofertas h2{
+        color: black;
+        font-size: 3rem;
+    }
+    .ofertas p{
+        color: white;
+        text-align:justify;
+    }
+    .noticias{
+        background-color: lightslategray;
+        text-align: justify;
+        padding: 8px;
+    }
+    .noticias h2{
+        color: black;
+        font-size: 3rem;
+    }
+    .noticias p{
+        color: white;
+        text-align:justify;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .logoTitulo h1{
+        margin: 0 15%;
+    }
+
+
+
+    .ofertas{
+        border: 2px solid black;
+        background-color: lightgray;
+        text-align: justify;
+        padding: 8px;
+    }
+
+    .ofertas h2, .noticias h2{
+        color: black;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        transition: scale 1000ms;
+    }
+
+    .ofertas h2:hover{
+        transform: scale(1.1,1.1);
+        color: firebrick;
+        font-weight: bold;
+    }
+
+    .noticias h2:hover{
+        transform: scale(1.2,1.2);
+    }
+
+    .ofertas p, .noticias p{
+        color: #2c3e50;
+        text-align:justify;
+        padding: 5px 10px;
+    }
+    
+    .noticias{
+        background: #bdc3c7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        text-align: justify;
+        padding: 8px;
+        border: 2px solid black;
+    }
+
+}
