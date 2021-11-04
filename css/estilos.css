@@ -164,53 +164,58 @@ footer p{
     margin: 3px;
     padding: 8px;
 }
+
 .ofertas h2{
     color: firebrick;
     font-size: 3.5rem;
     text-align: center;
 }
+
 .ofertas p{
     color: white;
     text-align:justify;
 }
+
 .noticias{
-    background-color: lightslategray;
-    text-align: justify;
+    background-color: lightgray;
+    text-align: left;
     margin: 3px;
     padding: 8px;
 }
-.noticias h2{
-    color: firebrick;
-    font-size: 3.5rem;
-    text-align: center;
+.noticias h3{
+    color: black;
+    text-align: left;
 }
 .noticias p{
     color: white;
     text-align:justify;
 }
 
+.card-body .card-text{
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+
+
 /* PAGINA PRODUCTOS */
+
+section h2{
+    margin: 10px 0;
+}
 
 /* TABLA */
 table{
     border: 2px solid;
+    border-color: black;
+    background-color: lightgray;
 }
 
 th{
-    background-color: dimgray;
-    color: ghostwhite;
+    background-color:black;
+    color: black;
     border: 1px solid;
-}
-
-tr, td{
-    border: 1px solid;
-    font-size: 1.5rem;
-}
-
-a{
-    color: white;
-    font-size: 2rem;
-    text-decoration: none;
 }
 
 .estiloCarousel{
@@ -328,19 +333,7 @@ a{
         color: white;
         text-align:justify;
     }
-    .noticias{
-        background-color: lightslategray;
-        text-align: justify;
-        padding: 8px;
-    }
-    .noticias h2{
-        color: black;
-        font-size: 3rem;
-    }
-    .noticias p{
-        color: white;
-        text-align:justify;
-    }
+
 }
 
 @media only screen and (min-width: 1024px){
@@ -372,20 +365,9 @@ a{
         font-weight: bold;
     }
 
-    .noticias h2:hover{
-        transform: scale(1.2,1.2);
-    }
-
-    .ofertas p, .noticias p{
-        color: #2c3e50;
-        text-align:justify;
-        padding: 5px 10px;
-    }
     
     .noticias{
-        background: #bdc3c7;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         text-align: justify;
         padding: 8px;
         border: 2px solid black;
