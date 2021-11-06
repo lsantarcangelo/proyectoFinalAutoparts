@@ -30,7 +30,7 @@ header{
         h1{
             /*font-family: 'Source Sans Pro', sans-serif;*/
             font-family: 'Stardos Stencil', cursive;
-            color: white;
+            color: #bdc3c7;
             text-transform: uppercase;
             text-align: center;
             text-shadow: 1px 1px 3px lightgrey;
@@ -39,7 +39,10 @@ header{
 }
 
 .menu{
-    margin: 0;
+        margin: 0;
+    li{
+        font-family: 'Stardos Stencil', cursive;
+    }
     li:hover{
         ul{
             display: block;
@@ -53,15 +56,14 @@ nav{
     text-align: center;
     background-color: black;
     ul{
-        color: white;
         font-size: 2rem;
             li{
                 display: inline-block;
                 padding: 0 20px;
                 position: relative;
                     a{
-                        text-decoration: none
-                        color: white;
+                        text-decoration: none;
+                        color: #bdc3c7;
                     }
                     a:hover{
                         background-color: red;
