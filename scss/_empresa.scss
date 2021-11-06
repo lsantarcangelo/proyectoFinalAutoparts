@@ -1,0 +1,33 @@
+/* PAGINA EMPRESA */
+.gridMainEmpresa{
+    display: grid;
+    grid-template-areas: 
+    "historia fundadores"
+    "local local";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 300px 400px;
+}
+
+.historia{
+    grid-area: historia;
+    border: 2px solid black;
+    background-color: lightyellow;
+    margin: 20px 10px;
+    padding: 0 10px;
+}
+
+.fundadores{
+    grid-area: fundadores;
+    border: 2px solid black;
+    background-color: lightyellow;
+    margin: 20px 10px;
+    padding: 0 10px;
+}
+
+.local{
+    grid-area: local;
+    border: 2px solid black;
+    background-color: lightgray;
+    margin: 20px 10px;
+    padding: 0 10px;
+}

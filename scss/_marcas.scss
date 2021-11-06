@@ -1,0 +1,31 @@
+/* PAGINA MARCAS */
+
+.galeriaMarcas{
+    padding: 25px 25px;
+    text-align: center;
+    background-color: lightgray;
+    h2{
+        margin-bottom: 20px;
+    }
+}
+
+.contieneLogos{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.logoMarcas{
+    text-align: center;
+    margin: 10px 50px;
+    img{
+        max-width: 100%;
+        width: 150px;
+        height: 150px;
+        margin: 0 20px;
+    }
+}
+
+.multimedia{
+    text-align: center;
+}
