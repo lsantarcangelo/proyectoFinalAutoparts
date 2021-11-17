@@ -21,18 +21,18 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
-  .logoTitulo img {
-    margin: 10px 0 0 10px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%; }
   .logoTitulo h1 {
     font-family: 'Stardos Stencil', cursive;
     color: #bdc3c7;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 15%;
-    font-size: 2.8rem; }
+    margin: 0 auto;
+    font-size: 4.5vw; }
+  .logoTitulo #logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px 0 0 10px; }
 
 .menu {
   margin: 0; }
@@ -67,14 +67,15 @@ nav {
 
 /* FOOTER */
 footer {
-  font-size: 1.2vw;
   color: white;
   background-color: dimgray;
   height: 35px; }
   footer p {
+    font-size: 0.8rem;
     display: inline-block;
     width: 20%;
-    text-align: center; }
+    text-align: center;
+    margin: 5px 5px 0; }
   footer a {
     display: inline-block;
     margin-top: 5px; }
@@ -92,25 +93,40 @@ footer {
   padding: 8px; }
   .ofertas h2 {
     color: #bdc3c7;
+    font-size: 1.2rem;
     text-align: center;
     font-family: 'Stardos Stencil', cursive;
     text-transform: uppercase; }
   .ofertas p {
     text-align: justify; }
+  .ofertas .boton-ofertas {
+    color: white;
+    background-color: tomato; }
 
 .noticias {
-  background-color: lightgray;
-  text-align: left;
-  text-transform: capitalize;
-  margin: 3px;
-  padding: 15px; }
+  background-color: lightgray; }
+  .noticias h2 {
+    font-size: 1.2rem;
+    color: #bdc3c7;
+    background-color: black;
+    text-align: center;
+    font-family: 'Stardos Stencil', cursive;
+    text-transform: uppercase;
+    height: 25px;
+    padding-top: 6px; }
   .noticias h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
     color: black;
-    text-align: left; }
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Stardos Stencil', cursive; }
+  .noticias img {
+    margin-bottom: 5px; }
   .noticias p {
-    color: black;
+    color: #8d7d7d;
     text-align: justify;
-    font-size: 1.1vw; }
+    font-size: 0.8rem; }
 
 .card-body .card-text {
   font-size: 1.5rem;
@@ -203,10 +219,10 @@ th {
   font-size: 1.5rem; }
 
 /*MEDIA QUERIES*/
-@media (max-width: 424px) {
+@media (min-width: 321px) and (max-width: 425px) {
   .logoTitulo
 h1 {
-    font-size: 4.5vw;
+    font-size: 4.6vw;
     margin: 0 auto; }
   #logo {
     width: 50px;

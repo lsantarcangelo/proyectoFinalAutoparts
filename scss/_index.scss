@@ -10,6 +10,7 @@
     padding: 8px;
     h2{
         color: #bdc3c7;
+        font-size: 1.2rem;
         text-align: center;
         font-family: 'Stardos Stencil', cursive;
         text-transform: uppercase;
@@ -17,22 +18,40 @@
     p{
         text-align:justify;
     }
+    .boton-ofertas{
+        color: white;
+        background-color: tomato;
+    }
 }
 
 .noticias{
     background-color: lightgray;
-    text-align: left;
-    text-transform: capitalize;
-    margin: 3px;
-    padding: 15px;
+
+    h2{
+        font-size: 1.2rem;
+        color: #bdc3c7;
+        background-color: black;
+        text-align: center;
+        font-family: 'Stardos Stencil', cursive;
+        text-transform: uppercase;
+        height: 25px;
+        padding-top: 6px;
+    }
     h3{
+        font-size: 1.2rem;
+        font-weight: bold;
         color: black;
-        text-align: left;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: 'Stardos Stencil', cursive;
+    }
+    img{
+        margin-bottom: 5px;
     }
     p{
-        color: black;
+        color: rgb(141, 125, 125);
         text-align:justify;
-        font-size: 1.1vw;
+        font-size: 0.8rem;
     }
 }
 
