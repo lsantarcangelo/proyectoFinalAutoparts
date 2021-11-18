@@ -44,14 +44,25 @@
         text-align: center;
         text-transform: capitalize;
         font-family: 'Stardos Stencil', cursive;
+        margin: 5px 0;
     }
-    img{
-        margin-bottom: 5px;
+    .fotoNoticia{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        img{
+            max-width: 255px;
+        }
+    }
+    .colNoticia{
+        margin-bottom: 10px;
+        background-color: white;
     }
     p{
-        color: rgb(141, 125, 125);
+        color: black;
         text-align:justify;
         font-size: 0.8rem;
+        padding: 0 5px 0;
     }
 }
 
