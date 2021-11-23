@@ -161,58 +161,71 @@ th {
   margin: auto; }
 
 /* PAGINA MARCAS */
+#contieneMarcas {
+  margin: 6px; }
+
 .galeriaMarcas {
-  padding: 25px 25px;
+  padding: 0 25px 25px 25px;
   text-align: center;
   background-color: lightgray; }
-  .galeriaMarcas h2 {
-    margin-bottom: 20px; }
 
-.contieneLogos {
-  display: flex;
-  justify-content: center;
+#tituloMarcas h2 {
+  margin: 0;
+  padding: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #bdc3c7;
+  background-color: black;
+  text-align: center;
+  font-family: 'Stardos Stencil', cursive;
+  text-transform: uppercase; }
+
+#contieneLogos {
   margin-bottom: 40px; }
 
 .logoMarcas {
   text-align: center;
-  margin: 10px 50px; }
+  margin: 15px 0; }
   .logoMarcas img {
-    max-width: 100%;
-    width: 150px;
-    height: 150px;
-    margin: 0 20px; }
-
-.multimedia {
-  text-align: center; }
+    margin: 5px 20px;
+    width: 90px;
+    height: auto; }
 
 /* PAGINA EMPRESA */
-.gridMainEmpresa {
-  display: grid;
-  grid-template-areas: "historia fundadores" "local local";
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 300px 400px; }
-
-.historia {
-  grid-area: historia;
-  border: 2px solid black;
+#historia {
   background-color: lightgray;
-  margin: 20px 10px;
-  padding: 0 10px;
-  font-size: 1.5rem; }
-
-.fundadores {
-  grid-area: fundadores;
-  border: 2px solid black;
-  background-color: lightgray;
-  margin: 20px 10px;
+  margin: 10px 6px;
   padding: 0 10px; }
+  #historia h2 {
+    color: #bdc3c7;
+    text-align: center;
+    font-family: 'Stardos Stencil', cursive;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background-color: black; }
 
-.local {
-  grid-area: local;
-  border: 2px solid black;
+#fundadores {
   background-color: lightgray;
-  margin: 20px 10px;
+  margin: 10px 6px;
   padding: 0 10px; }
+  #fundadores h2 {
+    color: #bdc3c7;
+    text-align: center;
+    font-family: 'Stardos Stencil', cursive;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background-color: black; }
+
+#local {
+  background-color: lightgray;
+  margin: 10px 6px;
+  padding: 0 10px; }
+  #local h2 {
+    color: #bdc3c7;
+    text-align: center;
+    font-family: 'Stardos Stencil', cursive;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background-color: black; }
 
 /* PAGINA CONTACTO */
 .formulario {
@@ -236,6 +249,7 @@ th {
     width: 50px;
     height: 50px; } }
 
+/*DISPLAY INTERMEDIO*/
 @media (min-width: 576px) and (max-width: 767px) {
   .logoTitulo h1 {
     margin: 0 auto;
@@ -308,6 +322,7 @@ th {
       color: white;
       background-color: tomato; } }
 
+/*DISPLAY GRANDE*/
 @media (min-width: 768px) and (max-width: 1154px) {
   .logoTitulo h1 {
     margin: 0 auto;
@@ -332,6 +347,12 @@ th {
         nav ul li a:hover {
           background-color: red;
           color: white; }
+  footer .wsp {
+    height: 15px;
+    width: 15px; }
+  footer p {
+    font-size: 1rem; }
+  /*PAGINA INDEX*/
   .ofertas {
     padding: 8px; }
     .ofertas h2 {
@@ -372,12 +393,27 @@ th {
       text-align: justify;
       font-size: 1rem;
       padding: 0 5px 0; }
-  footer .wsp {
-    height: 15px;
-    width: 15px; }
-  footer p {
-    font-size: 1rem; } }
+  /*PAGINA MARCAS*/
+  #contieneMarcas {
+    margin: 6px; }
+  .galeriaMarcas {
+    padding: 25px;
+    text-align: center;
+    background-color: lightgray; }
+  #tituloMarcas h2 {
+    padding: 10px 0;
+    font-size: 2.1rem;
+    color: #bdc3c7;
+    background-color: black;
+    text-align: center;
+    font-family: 'Stardos Stencil', cursive;
+    text-transform: uppercase; }
+  .logoMarcas img {
+    margin: 5px 20px;
+    width: 150px;
+    height: auto; } }
 
+/*DISPLAY EXTRA LARGE*/
 @media (min-width: 1155px) {
   .logoTitulo h1 {
     margin: 0 auto;
@@ -401,6 +437,12 @@ th {
         nav ul li a:hover {
           background-color: red;
           color: white; }
+  footer .wsp {
+    height: 25px;
+    width: 25px; }
+  footer p {
+    font-size: 1.5rem; }
+  /*PAGINA INDEX*/
   .ofertas {
     border: 2px solid black;
     background-color: black;
@@ -449,8 +491,22 @@ th {
       text-align: justify;
       font-size: 1.5rem;
       padding: 0 5px 0; }
-  footer .wsp {
-    height: 25px;
-    width: 25px; }
-  footer p {
-    font-size: 1.5rem; } }
+  /*PAGINA MARCAS*/
+  #contieneMarcas {
+    margin: 6px; }
+  .galeriaMarcas {
+    padding: 0 25px 25px 25px;
+    text-align: center;
+    background-color: lightgray; }
+  #tituloMarcas h2 {
+    padding: 10px 0;
+    font-size: 3rem;
+    color: #bdc3c7;
+    background-color: black;
+    text-align: center;
+    font-family: 'Stardos Stencil', cursive;
+    text-transform: uppercase; }
+  .logoMarcas img {
+    margin: 5px 20px;
+    width: 150px;
+    height: auto; } }

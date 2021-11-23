@@ -12,6 +12,7 @@
     } 
 }
 
+/*DISPLAY INTERMEDIO*/
 @media (min-width: 576px) and (max-width: 767px) {
     .logoTitulo{
         h1{
@@ -106,7 +107,7 @@
     }
 }
 
-
+/*DISPLAY GRANDE*/
 @media (min-width: 768px) and (max-width: 1154px) {
     .logoTitulo{
         h1{
@@ -140,6 +141,16 @@
                     }
             }
     }
+    footer{
+        .wsp{
+            height: 15px;
+            width: 15px;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    /*PAGINA INDEX*/
     .ofertas{
             padding: 8px;
         h2{
@@ -192,17 +203,36 @@
             padding: 0 5px 0;
         }
     }
-    footer{
-        .wsp{
-            height: 15px;
-            width: 15px;
-        }
-        p{
-            font-size: 1rem;
+    /*PAGINA MARCAS*/
+    #contieneMarcas{
+        margin: 6px;
+    }
+    .galeriaMarcas{
+        padding: 25px;
+        text-align: center;
+        background-color: lightgray;
+    }
+    #tituloMarcas{
+        h2{
+        padding: 10px 0;
+        font-size: 2.1rem;
+        color: #bdc3c7;
+        background-color: black;
+        text-align: center;
+        font-family: 'Stardos Stencil', cursive;
+        text-transform: uppercase;
+    }
+    }
+    .logoMarcas{
+        img{
+            margin: 5px 20px;
+            width: 150px;
+            height: auto;
         }
     }
 }
 
+/*DISPLAY EXTRA LARGE*/
 @media (min-width: 1155px) {
     .logoTitulo{
         h1{
@@ -235,6 +265,16 @@
                     }
             }
     }
+    footer{
+        .wsp{
+            height: 25px;
+            width: 25px;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    /*PAGINA INDEX*/
     .ofertas{
         border: 2px solid black;
         background-color: black;
@@ -295,13 +335,31 @@
             padding: 0 5px 0;
         }
     }
-    footer{
-        .wsp{
-            height: 25px;
-            width: 25px;
-        }
-        p{
-            font-size: 1.5rem;
+    /*PAGINA MARCAS*/
+    #contieneMarcas{
+        margin: 6px;
+    }
+    .galeriaMarcas{
+        padding: 0 25px 25px 25px;
+        text-align: center;
+        background-color: lightgray;
+    }
+    #tituloMarcas{
+        h2{
+        padding: 10px 0;
+        font-size: 3rem;
+        color: #bdc3c7;
+        background-color: black;
+        text-align: center;
+        font-family: 'Stardos Stencil', cursive;
+        text-transform: uppercase;
+    }
+    }
+    .logoMarcas{
+        img{
+            margin: 5px 20px;
+            width: 150px;
+            height: auto;
         }
     }
 }

@@ -1,31 +1,33 @@
 /* PAGINA MARCAS */
-
+#contieneMarcas{
+    margin: 6px;
+}
 .galeriaMarcas{
-    padding: 25px 25px;
+    padding: 0 25px 25px 25px;
     text-align: center;
     background-color: lightgray;
-    h2{
-        margin-bottom: 20px;
-    }
 }
-
-.contieneLogos{
-    display:flex;
-    justify-content: center;
+#tituloMarcas{
+    h2{
+    margin: 0;
+    padding: 10px 0 5px;
+    font-size: 1.2rem;
+    color: #bdc3c7;
+    background-color: black;
+    text-align: center;
+    font-family: 'Stardos Stencil', cursive;
+    text-transform: uppercase;
+}
+}
+#contieneLogos{
     margin-bottom: 40px;
 }
-
 .logoMarcas{
     text-align: center;
-    margin: 10px 50px;
+    margin: 15px 0;
     img{
-        max-width: 100%;
-        width: 150px;
-        height: 150px;
-        margin: 0 20px;
+        margin: 5px 20px;
+        width: 90px;
+        height: auto;
     }
-}
-
-.multimedia{
-    text-align: center;
 }
