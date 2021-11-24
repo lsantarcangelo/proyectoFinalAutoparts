@@ -1,10 +1,12 @@
 /* PAGINA EMPRESA */
 
+#mainEmpresa{
+    margin: 6px;
+}
 #historia{
     background-color: lightgray;
-    margin: 10px 6px;
-    padding: 0 10px;
         h2{
+            padding: 10px 0;
             color: #bdc3c7;
             text-align: center;
             font-family: 'Stardos Stencil', cursive;
@@ -12,33 +14,31 @@
             font-size: 1.2rem;
             background-color: black;
         }
-
+        #fotoHistoria{
+            padding: 25px;
+        }
+        #textoHistoria{
+            font-size: 1.2rem;
+            padding: 0 25px 20px 25px;
+                .textoBold{
+                    font-weight: bold;
+                }
+        }
 }
-
-#fundadores{
+#ubicacion{
     background-color: lightgray;
-    margin: 10px 6px;
-    padding: 0 10px;
-    h2{
-        color: #bdc3c7;
-        text-align: center;
-        font-family: 'Stardos Stencil', cursive;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        background-color: black;
-    }
-}
-
-#local{
-    background-color: lightgray;
-    margin: 10px 6px;
-    padding: 0 10px;
-    h2{
-        color: #bdc3c7;
-        text-align: center;
-        font-family: 'Stardos Stencil', cursive;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        background-color: black;
-    }
+        h2{
+            padding: 10px 0;
+            color: #bdc3c7;
+            text-align: center;
+            font-family: 'Stardos Stencil', cursive;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            background-color: black;
+        }
+        #mapa{
+            padding: 25px 25px 20px 25px;
+            width: 100%;
+            height: auto;
+        }
 }

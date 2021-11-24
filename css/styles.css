@@ -142,9 +142,6 @@ footer {
   color: black; }
 
 /* PAGINA PRODUCTOS */
-section h2 {
-  margin: 10px 0; }
-
 /* TABLA */
 table {
   border: 2px solid;
@@ -191,41 +188,41 @@ th {
     height: auto; }
 
 /* PAGINA EMPRESA */
+#mainEmpresa {
+  margin: 6px; }
+
 #historia {
-  background-color: lightgray;
-  margin: 10px 6px;
-  padding: 0 10px; }
+  background-color: lightgray; }
   #historia h2 {
+    padding: 10px 0;
     color: #bdc3c7;
     text-align: center;
     font-family: 'Stardos Stencil', cursive;
     text-transform: uppercase;
     font-size: 1.2rem;
     background-color: black; }
+  #historia #fotoHistoria {
+    padding: 25px; }
+  #historia #textoHistoria {
+    font-size: 1.2rem;
+    padding: 0 25px 20px 25px; }
+    #historia #textoHistoria .textoBold {
+      font-weight: bold; }
 
-#fundadores {
-  background-color: lightgray;
-  margin: 10px 6px;
-  padding: 0 10px; }
-  #fundadores h2 {
+#ubicacion {
+  background-color: lightgray; }
+  #ubicacion h2 {
+    padding: 10px 0;
     color: #bdc3c7;
     text-align: center;
     font-family: 'Stardos Stencil', cursive;
     text-transform: uppercase;
     font-size: 1.2rem;
     background-color: black; }
-
-#local {
-  background-color: lightgray;
-  margin: 10px 6px;
-  padding: 0 10px; }
-  #local h2 {
-    color: #bdc3c7;
-    text-align: center;
-    font-family: 'Stardos Stencil', cursive;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    background-color: black; }
+  #ubicacion #mapa {
+    padding: 25px 25px 20px 25px;
+    width: 100%;
+    height: auto; }
 
 /* PAGINA CONTACTO */
 .formulario {
@@ -240,7 +237,8 @@ th {
 .textoFormulario {
   font-size: 1.5rem; }
 
-/*MEDIA QUERIES*/
+/* MEDIA QUERIES */
+/*---DISPLAY CHICO---*/
 @media (min-width: 321px) and (max-width: 425px) {
   .logoTitulo h1 {
     font-size: 4.6vw;
@@ -249,7 +247,7 @@ th {
     width: 50px;
     height: 50px; } }
 
-/*DISPLAY INTERMEDIO*/
+/*---DISPLAY INTERMEDIO---*/
 @media (min-width: 576px) and (max-width: 767px) {
   .logoTitulo h1 {
     margin: 0 auto;
@@ -320,9 +318,43 @@ th {
       text-align: justify; }
     .ofertas .boton-ofertas {
       color: white;
-      background-color: tomato; } }
+      background-color: tomato; }
+  /*PAGINA EMPRESA*/
+  #mainEmpresa {
+    margin: 6px; }
+  #historia {
+    background-color: lightgray; }
+    #historia h2 {
+      padding: 10px 0;
+      color: #bdc3c7;
+      text-align: center;
+      font-family: 'Stardos Stencil', cursive;
+      text-transform: uppercase;
+      font-size: 2.1rem;
+      background-color: black; }
+    #historia #fotoHistoria {
+      padding: 25px; }
+    #historia #textoHistoria {
+      font-size: 1.5rem;
+      padding: 0 25px 20px 25px; }
+      #historia #textoHistoria .textoBold {
+        font-weight: bold; }
+  #ubicacion {
+    background-color: lightgray; }
+    #ubicacion h2 {
+      padding: 10px 0;
+      color: #bdc3c7;
+      text-align: center;
+      font-family: 'Stardos Stencil', cursive;
+      text-transform: uppercase;
+      font-size: 2.1rem;
+      background-color: black; }
+    #ubicacion #mapa {
+      padding: 25px 25px 20px 25px;
+      width: 600px;
+      height: 451px; } }
 
-/*DISPLAY GRANDE*/
+/*---DISPLAY GRANDE---*/
 @media (min-width: 768px) and (max-width: 1154px) {
   .logoTitulo h1 {
     margin: 0 auto;
@@ -411,9 +443,43 @@ th {
   .logoMarcas img {
     margin: 5px 20px;
     width: 150px;
-    height: auto; } }
+    height: auto; }
+  /*PAGINA EMPRESA*/
+  #mainEmpresa {
+    margin: 6px; }
+  #historia {
+    background-color: lightgray; }
+    #historia h2 {
+      padding: 10px 0;
+      color: #bdc3c7;
+      text-align: center;
+      font-family: 'Stardos Stencil', cursive;
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      background-color: black; }
+    #historia #fotoHistoria {
+      padding: 25px; }
+    #historia #textoHistoria {
+      font-size: 1.8rem;
+      padding: 0 25px 20px 25px; }
+      #historia #textoHistoria .textoBold {
+        font-weight: bold; }
+  #ubicacion {
+    background-color: lightgray; }
+    #ubicacion h2 {
+      padding: 10px 0;
+      color: #bdc3c7;
+      text-align: center;
+      font-family: 'Stardos Stencil', cursive;
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      background-color: black; }
+    #ubicacion #mapa {
+      padding: 25px 25px 20px 25px;
+      width: 600px;
+      height: 451px; } }
 
-/*DISPLAY EXTRA LARGE*/
+/*---DISPLAY EXTRA LARGE---*/
 @media (min-width: 1155px) {
   .logoTitulo h1 {
     margin: 0 auto;
@@ -500,7 +566,7 @@ th {
     background-color: lightgray; }
   #tituloMarcas h2 {
     padding: 10px 0;
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #bdc3c7;
     background-color: black;
     text-align: center;
@@ -509,4 +575,38 @@ th {
   .logoMarcas img {
     margin: 5px 20px;
     width: 150px;
-    height: auto; } }
+    height: auto; }
+  /*PAGINA EMPRESA*/
+  #mainEmpresa {
+    margin: 6px; }
+  #historia {
+    background-color: lightgray; }
+    #historia h2 {
+      padding: 10px 0;
+      color: #bdc3c7;
+      text-align: center;
+      font-family: 'Stardos Stencil', cursive;
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      background-color: black; }
+    #historia #fotoHistoria {
+      padding: 25px; }
+    #historia #textoHistoria {
+      font-size: 1.8rem;
+      padding: 0 25px 20px 25px; }
+      #historia #textoHistoria .textoBold {
+        font-weight: bold; }
+  #ubicacion {
+    background-color: lightgray; }
+    #ubicacion h2 {
+      padding: 10px 0;
+      color: #bdc3c7;
+      text-align: center;
+      font-family: 'Stardos Stencil', cursive;
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      background-color: black; }
+    #ubicacion #mapa {
+      padding: 25px 25px 20px 25px;
+      width: 600px;
+      height: 451px; } }
