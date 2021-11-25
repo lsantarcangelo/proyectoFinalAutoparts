@@ -29,23 +29,34 @@
     <header>
         <div class="logoTitulo">
             <img id="logo" src="../multimedia/autoparts_logo2.png" alt="logo de la empresa">
-            <h1>Repuestos de Automoviles</h1> <!--titulo principal-->
+            <h1>Repuestos de Automóviles</h1> <!--titulo principal-->
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a>
-                    <ul class="subMenu">
-                        <li><a href="">Motor</a></li>
-                        <li><a href="">Interior</a></li>
-                        <li><a href="">Carroceria</a></li>
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"                  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="marcas.html">Marcas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="empresa.html">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="marcas.html">Marcas</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -79,7 +90,6 @@
             </section>
         </div>
     </main>
-
     <footer>
         <p>Direccion: Av Warnes 1632</p>
         <p>Telefono: 01148904567</p>

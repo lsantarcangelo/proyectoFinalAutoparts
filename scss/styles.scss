@@ -39,49 +39,6 @@ header{
         }
 }
 
-.menu{
-        margin: 0;
-    li{
-        font-family: 'Stardos Stencil', cursive;
-    }
-    li:hover{
-        ul{
-            display: block;
-            background-color: black;
-            text-align: left; 
-        }
-    }
-}
-
-nav{
-    text-align: center;
-    background-color: black;
-    ul{
-        font-size: 1rem;
-            li{
-                display: inline-block;
-                padding: 0 20px;
-                position: relative;
-                    a{
-                        text-decoration: none;
-                        color: #bdc3c7;
-                    }
-                    a:hover{
-                        background-color: red;
-                        color: white;
-                    }
-                }
-        }
-}
-
-.subMenu{
-    position: absolute;
-    display: none;
-        li{
-            display: block;
-        }
-}
-
 
 /* FOOTER */
 footer{

@@ -34,37 +34,6 @@ header {
     border-radius: 50%;
     margin: 10px 0 0 10px; }
 
-.menu {
-  margin: 0; }
-  .menu li {
-    font-family: 'Stardos Stencil', cursive; }
-  .menu li:hover ul {
-    display: block;
-    background-color: black;
-    text-align: left; }
-
-nav {
-  text-align: center;
-  background-color: black; }
-  nav ul {
-    font-size: 1rem; }
-    nav ul li {
-      display: inline-block;
-      padding: 0 20px;
-      position: relative; }
-      nav ul li a {
-        text-decoration: none;
-        color: #bdc3c7; }
-      nav ul li a:hover {
-        background-color: red;
-        color: white; }
-
-.subMenu {
-  position: absolute;
-  display: none; }
-  .subMenu li {
-    display: block; }
-
 /* FOOTER */
 footer {
   color: white;
@@ -251,27 +220,13 @@ th {
 @media (min-width: 576px) and (max-width: 767px) {
   .logoTitulo h1 {
     margin: 0 auto;
+    padding-right: 90px;
     font-size: 3.0rem;
     text-align: center;
     text-shadow: 1px 1px 1px lightgrey; }
   .logoTitulo #logo {
     width: 80px;
     height: 80px; }
-  nav {
-    text-align: center;
-    background-color: black; }
-    nav ul {
-      font-size: 1.5rem; }
-      nav ul li {
-        display: inline-block;
-        padding: 0 20px;
-        position: relative; }
-        nav ul li a {
-          text-decoration: none;
-          color: #bdc3c7; }
-        nav ul li a:hover {
-          background-color: red;
-          color: white; }
   .noticias {
     background-color: lightgray; }
     .noticias h2 {
@@ -358,6 +313,7 @@ th {
 @media (min-width: 768px) and (max-width: 1154px) {
   .logoTitulo h1 {
     margin: 0 auto;
+    padding-right: 110px;
     font-size: 3.5rem;
     text-align: center;
     text-shadow: 1px 1px 1px lightgrey; }
@@ -366,19 +322,13 @@ th {
     height: 100px; }
   nav {
     text-align: center;
+    font-family: 'Stardos Stencil', cursive;
     background-color: black; }
-    nav ul {
-      font-size: 1.8rem; }
-      nav ul li {
-        display: inline-block;
-        padding: 0 20px;
-        position: relative; }
-        nav ul li a {
-          text-decoration: none;
-          color: #bdc3c7; }
-        nav ul li a:hover {
-          background-color: red;
-          color: white; }
+    nav ul li.nav-item {
+      font-size: 1.8rem;
+      padding: 0 20px; }
+      nav ul li.nav-item a:hover {
+        background-color: red; }
   footer .wsp {
     height: 15px;
     width: 15px; }
@@ -418,7 +368,7 @@ th {
       .noticias .fotoNoticia img {
         max-width: 275px; }
     .noticias .colNoticia {
-      margin-bottom: 10px;
+      margin: 10px 0;
       background-color: white; }
     .noticias p {
       color: black;
@@ -483,6 +433,7 @@ th {
 @media (min-width: 1155px) {
   .logoTitulo h1 {
     margin: 0 auto;
+    padding-right: 160px;
     font-size: 4.5rem;
     text-shadow: 1px 1px 1px lightgrey; }
   .logoTitulo #logo {
@@ -490,19 +441,13 @@ th {
     height: 150px; }
   nav {
     text-align: center;
+    font-family: 'Stardos Stencil', cursive;
     background-color: black; }
-    nav ul {
-      font-size: 2.5rem; }
-      nav ul li {
-        display: inline-block;
-        padding: 0 20px;
-        position: relative; }
-        nav ul li a {
-          text-decoration: none;
-          color: #bdc3c7; }
-        nav ul li a:hover {
-          background-color: red;
-          color: white; }
+    nav ul li.nav-item {
+      font-size: 2.5rem;
+      padding: 0 20px; }
+      nav ul li.nav-item a:hover {
+        background-color: red; }
   footer .wsp {
     height: 25px;
     width: 25px; }
@@ -544,13 +489,16 @@ th {
       text-transform: capitalize;
       font-family: 'Stardos Stencil', cursive; }
     .noticias .fotoNoticia {
-      margin-bottom: 10px;
+      margin-bottom: 0;
+      margin-right: 15px;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      float: left; }
       .noticias .fotoNoticia img {
-        max-width: 275px; }
+        max-width: 285px; }
     .noticias .colNoticia {
       margin: 10px 0;
+      padding-bottom: 10px;
       background-color: white; }
     .noticias p {
       color: black;
