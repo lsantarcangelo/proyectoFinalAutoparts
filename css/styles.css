@@ -16,23 +16,24 @@ header {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #000000, #434343);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.logoTitulo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; }
-  .logoTitulo h1 {
-    font-family: 'Stardos Stencil', cursive;
-    color: #bdc3c7;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 4.5vw; }
-  .logoTitulo #logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 10px 0 0 10px; }
+  header .logoTitulo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    header .logoTitulo h1 {
+      font-family: 'Stardos Stencil', cursive;
+      color: #bdc3c7;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 4.5vw; }
+    header .logoTitulo #logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 10px 0 0 10px; }
+  header .navbar-toggler {
+    margin-left: 10px; }
 
 /* FOOTER */
 footer {
@@ -98,13 +99,13 @@ footer {
     .noticias .fotoNoticia img {
       max-width: 255px; }
   .noticias .colNoticia {
-    margin-bottom: 10px;
+    margin: 10px 0;
     background-color: white; }
-  .noticias p {
-    color: black;
-    text-align: justify;
-    font-size: 0.8rem;
-    padding: 0 5px 0; }
+    .noticias .colNoticia p {
+      color: black;
+      text-align: justify;
+      font-size: 0.8rem;
+      padding: 0 5px 0; }
 
 .card-body .card-text {
   font-size: 1.5rem;
@@ -212,15 +213,26 @@ footer {
 /* PAGINA CONTACTO */
 .formulario {
   width: auto;
-  margin: 50px;
-  padding: 50px; }
+  margin: 5px 40px;
+  padding: 40px;
+  font-size: 1rem;
+  font-family: 'Stardos Stencil', cursive; }
   .formulario h2 {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding: 10px 0;
+    color: #bdc3c7;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background-color: black; }
   .formulario button {
-    background-color: tomato; }
-
-.textoFormulario {
-  font-size: 1.5rem; }
+    background-color: tomato;
+    color: white;
+    width: 100%;
+    margin: 3px auto; }
+  .formulario textarea {
+    width: 100%;
+    margin: auto; }
 
 /* MEDIA QUERIES */
 /*---DISPLAY CHICO---*/
@@ -243,7 +255,7 @@ footer {
   .logoTitulo #logo {
     width: 80px;
     height: 80px; }
-  /*PAGINA INDEX*/
+  /* PAGINA INDEX */
   .noticias {
     background-color: lightgray; }
     .noticias h2 {
@@ -319,7 +331,7 @@ footer {
   .estiloCarousel {
     width: 30vw;
     margin: 6px auto; }
-  /*PAGINA EMPRESA*/
+  /* PAGINA EMPRESA */
   #mainEmpresa {
     margin: 6px; }
   #historia {
@@ -352,39 +364,66 @@ footer {
     #ubicacion #mapa {
       padding: 25px 25px 20px 25px;
       width: 600px;
-      height: 451px; } }
+      height: 451px; }
+  /* PAGINA CONTACTO */
+  .formulario {
+    width: auto;
+    margin: 5px 40px;
+    padding: 60px;
+    font-size: 1.1rem;
+    font-family: 'Stardos Stencil', cursive; }
+    .formulario h2 {
+      margin-bottom: 20px;
+      padding: 10px 0;
+      color: #bdc3c7;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2.1rem;
+      background-color: black; }
+    .formulario button {
+      background-color: tomato;
+      color: white;
+      width: 120px;
+      margin: 3px auto;
+      font-size: 1rem; }
+    .formulario textarea {
+      width: 100%;
+      margin: auto; } }
 
 /*---DISPLAY GRANDE---*/
 @media (min-width: 768px) and (max-width: 1154px) {
-  .logoTitulo h1 {
+  header .logoTitulo h1 {
     margin: 0 auto;
     padding-right: 110px;
     font-size: 3.5rem;
     text-align: center;
     text-shadow: 1px 1px 1px lightgrey; }
-  .logoTitulo #logo {
+  header .logoTitulo #logo {
     width: 100px;
     height: 100px; }
-  nav {
+  header nav {
     text-align: center;
     font-family: 'Stardos Stencil', cursive;
     background-color: black; }
-    nav ul li.nav-item {
+    header nav ul li.nav-item {
       font-size: 1.8rem;
       padding: 0 20px; }
-      nav ul li.nav-item a:hover {
+      header nav ul li.nav-item a:hover {
         background-color: red; }
   footer .wsp {
     height: 15px;
     width: 15px; }
   footer p {
     font-size: 1rem; }
-  /*PAGINA INDEX*/
+  /* PAGINA INDEX */
   .ofertas {
     padding: 8px; }
     .ofertas h2 {
       color: #bdc3c7;
       font-size: 2.1rem; }
+      .ofertas h2:hover {
+        color: firebrick;
+        font-weight: bold; }
     .ofertas p {
       color: white;
       text-align: justify; }
@@ -399,6 +438,9 @@ footer {
       text-transform: uppercase;
       height: 35px;
       padding: 6px 0; }
+      .noticias h2:hover {
+        color: firebrick;
+        font-weight: bold; }
     .noticias h3 {
       font-size: 1.4rem;
       font-weight: bold;
@@ -407,19 +449,20 @@ footer {
       text-transform: capitalize;
       font-family: 'Stardos Stencil', cursive; }
     .noticias .fotoNoticia {
-      margin-bottom: 10px;
+      margin: 0 15px 10px 0;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      float: left; }
       .noticias .fotoNoticia img {
-        max-width: 275px; }
+        max-width: 285px; }
     .noticias .colNoticia {
       margin: 10px 0;
       background-color: white; }
-    .noticias p {
-      color: black;
-      text-align: justify;
-      font-size: 1rem;
-      padding: 0 5px 0; }
+      .noticias .colNoticia p {
+        color: black;
+        text-align: justify;
+        font-size: 1rem;
+        padding: 0 5px 0; }
   /* PAGINA PRODUCTOS */
   #contieneProductos {
     background-color: white;
@@ -448,7 +491,7 @@ footer {
   .estiloCarousel {
     width: 30vw;
     margin: 6px auto; }
-  /*PAGINA MARCAS*/
+  /* PAGINA MARCAS */
   #contieneMarcas {
     margin: 6px; }
   .galeriaMarcas {
@@ -467,7 +510,7 @@ footer {
     margin: 5px 20px;
     width: 150px;
     height: auto; }
-  /*PAGINA EMPRESA*/
+  /* PAGINA EMPRESA */
   #mainEmpresa {
     margin: 6px; }
   #historia {
@@ -500,33 +543,57 @@ footer {
     #ubicacion #mapa {
       padding: 25px 25px 20px 25px;
       width: 600px;
-      height: 451px; } }
+      height: 451px; }
+  /* PAGINA CONTACTO */
+  .formulario {
+    width: auto;
+    margin: 5px 40px;
+    padding: 60px;
+    font-size: 1.5rem;
+    font-family: 'Stardos Stencil', cursive; }
+    .formulario h2 {
+      margin-bottom: 20px;
+      padding: 10px 0;
+      color: #bdc3c7;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      background-color: black; }
+    .formulario button {
+      background-color: tomato;
+      color: white;
+      width: 140px;
+      margin: 3px auto;
+      font-size: 1.2rem; }
+    .formulario textarea {
+      width: 100%;
+      margin: auto; } }
 
 /*---DISPLAY EXTRA LARGE---*/
 @media (min-width: 1155px) {
-  .logoTitulo h1 {
+  header .logoTitulo h1 {
     margin: 0 auto;
     padding-right: 160px;
     font-size: 4.5rem;
     text-shadow: 1px 1px 1px lightgrey; }
-  .logoTitulo #logo {
+  header .logoTitulo #logo {
     width: 150px;
     height: 150px; }
-  nav {
+  header nav {
     text-align: center;
     font-family: 'Stardos Stencil', cursive;
     background-color: black; }
-    nav ul li.nav-item {
+    header nav ul li.nav-item {
       font-size: 2.5rem;
       padding: 0 20px; }
-      nav ul li.nav-item a:hover {
+      header nav ul li.nav-item a:hover {
         background-color: red; }
   footer .wsp {
     height: 25px;
     width: 25px; }
   footer p {
     font-size: 1.5rem; }
-  /*PAGINA INDEX*/
+  /* PAGINA INDEX */
   .ofertas {
     border: 2px solid black;
     background-color: black;
@@ -539,10 +606,9 @@ footer {
       margin-bottom: 5px;
       padding-bottom: 5px;
       transition: scale 1000ms; }
-  .ofertas h2:hover {
-    transform: scale(1.1, 1.1);
-    color: firebrick;
-    font-weight: bold; }
+      .ofertas h2:hover {
+        color: firebrick;
+        font-weight: bold; }
   .noticias {
     background-color: lightgray; }
     .noticias h2 {
@@ -554,6 +620,9 @@ footer {
       text-transform: uppercase;
       height: 45px;
       padding: 6px 0; }
+      .noticias h2:hover {
+        color: firebrick;
+        font-weight: bold; }
     .noticias h3 {
       font-size: 2rem;
       font-weight: bold;
@@ -573,11 +642,11 @@ footer {
       margin: 10px 0;
       padding-bottom: 10px;
       background-color: white; }
-    .noticias p {
-      color: black;
-      text-align: justify;
-      font-size: 1.5rem;
-      padding: 0 5px 0; }
+      .noticias .colNoticia p {
+        color: black;
+        text-align: justify;
+        font-size: 1.5rem;
+        padding: 0 5px 0; }
   /* PAGINA PRODUCTOS */
   #contieneProductos {
     background-color: white;
@@ -625,7 +694,7 @@ footer {
     margin: 5px 20px;
     width: 150px;
     height: auto; }
-  /*PAGINA EMPRESA*/
+  /* PAGINA EMPRESA */
   #mainEmpresa {
     margin: 6px; }
   #historia {
@@ -658,4 +727,28 @@ footer {
     #ubicacion #mapa {
       padding: 25px 25px 20px 25px;
       width: 600px;
-      height: 451px; } }
+      height: 451px; }
+  /* PAGINA CONTACTO */
+  .formulario {
+    width: auto;
+    margin: 5px 40px;
+    padding: 60px;
+    font-size: 1.5rem;
+    font-family: 'Stardos Stencil', cursive; }
+    .formulario h2 {
+      margin-bottom: 20px;
+      padding: 10px 0;
+      color: #bdc3c7;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3rem;
+      background-color: black; }
+    .formulario button {
+      background-color: tomato;
+      color: white;
+      width: 140px;
+      margin: 3px auto;
+      font-size: 1.2rem; }
+    .formulario textarea {
+      width: 100%;
+      margin: auto; } }

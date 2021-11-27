@@ -2,16 +2,27 @@
 
 .formulario{
     width: auto;
-    margin: 50px;
-    padding: 50px;
+    margin: 5px 40px;
+    padding: 40px;
+    font-size: 1rem;
+    font-family: 'Stardos Stencil', cursive;
     h2{
         margin-bottom: 20px;
+        padding: 10px 0;
+        color: #bdc3c7;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        background-color: black;
     }
     button{
         background-color: tomato;
+        color: white;
+        width: 100%;
+        margin: 3px auto;
     }
-}
-
-.textoFormulario{
-    font-size: 1.5rem;
+    textarea{
+        width: 100%;
+        margin: auto;
+    }
 }
