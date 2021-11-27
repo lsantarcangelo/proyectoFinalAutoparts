@@ -29,7 +29,7 @@
             height: 80px;
         }
     }
-
+    /*PAGINA INDEX*/
     .noticias{
         background-color: lightgray;
     
@@ -88,6 +88,41 @@
             color: white;
             background-color: tomato;
         }
+    }
+    /* PAGINA PRODUCTOS */
+    #contieneProductos{
+        background-color: white;
+        margin: 6px;
+        h2{
+            padding: 10px 0;
+            color: #bdc3c7;
+            text-align: center;
+            font-family: 'Stardos Stencil', cursive;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            background-color: black;
+        }
+        table{
+            border: 2px solid;
+            border-color: black;
+            background-color: lightgray;
+            th{
+                font-family: 'Stardos Stencil', cursive;
+                font-size: 1.4rem;
+                border: solid 0.5px;
+            }
+            tr{
+                font-family: 'Stardos Stencil', cursive;
+                font-size: 1.2rem;
+            }
+            td{
+                border: solid 0.5px;
+            }
+        }
+    }
+    .estiloCarousel{
+        width: 30vw;
+        margin: 6px auto;
     }
     /*PAGINA EMPRESA*/
     #mainEmpresa{
@@ -224,6 +259,41 @@
             font-size: 1rem;
             padding: 0 5px 0;
         }
+    }
+    /* PAGINA PRODUCTOS */
+    #contieneProductos{
+        background-color: white;
+        margin: 6px;
+        h2{
+            padding: 10px 0;
+            color: #bdc3c7;
+            text-align: center;
+            font-family: 'Stardos Stencil', cursive;
+            text-transform: uppercase;
+            font-size: 2.1rem;
+            background-color: black;
+        }
+        table{
+            border: 2px solid;
+            border-color: black;
+            background-color: lightgray;
+            th{
+                font-family: 'Stardos Stencil', cursive;
+                font-size: 1.8rem;
+                border: solid 0.5px;
+            }
+            tr{
+                font-family: 'Stardos Stencil', cursive;
+                font-size: 1.5rem;
+            }
+            td{
+                border: solid 0.5px;
+            }
+        }
+    }
+    .estiloCarousel{
+        width: 30vw;
+        margin: 6px auto;
     }
     /*PAGINA MARCAS*/
     #contieneMarcas{
@@ -398,7 +468,42 @@
             padding: 0 5px 0;
         }
     }
-    /*PAGINA MARCAS*/
+    /* PAGINA PRODUCTOS */
+    #contieneProductos{
+        background-color: white;
+        margin: 6px;
+        h2{
+            padding: 10px 0;
+            color: #bdc3c7;
+            text-align: center;
+            font-family: 'Stardos Stencil', cursive;
+            text-transform: uppercase;
+            font-size: 3rem;
+            background-color: black;
+        }
+        table{
+            border: 2px solid;
+            border-color: black;
+            background-color: lightgray;
+            th{
+                font-family: 'Stardos Stencil', cursive;
+                font-size: 2rem;
+                border: solid 0.5px;
+            }
+            tr{
+                font-family: 'Stardos Stencil', cursive;
+                font-size: 1.8rem;
+            }
+            td{
+                border: solid 0.5px;
+            }
+        }
+    }
+    .estiloCarousel{
+        width: 30vw;
+        margin: 6px auto;
+    }
+    /* PAGINA MARCAS */
     #contieneMarcas{
         margin: 6px;
     }

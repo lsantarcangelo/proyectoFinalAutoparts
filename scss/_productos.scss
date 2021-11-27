@@ -1,20 +1,37 @@
 /* PAGINA PRODUCTOS */
-
-
-/* TABLA */
-table{
-    border: 2px solid;
-    border-color: black;
-    background-color: lightgray;
+#contieneProductos{
+    background-color: white;
+    margin: 6px;
+    h2{
+        padding: 10px 0;
+        color: #bdc3c7;
+        text-align: center;
+        font-family: 'Stardos Stencil', cursive;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        background-color: black;
+    }
+    table{
+        border: 2px solid;
+        border-color: black;
+        background-color: lightgray;
+        th{
+            font-family: 'Stardos Stencil', cursive;
+            font-size: 1.1rem;
+            border: solid 0.5px;
+            padding-left: 2vw;
+        }
+        tr{
+            font-family: 'Stardos Stencil', cursive;
+            font-size: 1rem;
+        }
+        td{
+            border: solid 0.5px;
+            padding-left: 2vw;
+        }
+    }
 }
-
-th{
-    background-color:black;
-    color: black;
-    border: 1px solid;
-}
-
 .estiloCarousel{
-    width: 400px;
-    margin: auto;
+    width: 35vw;
+    margin: 6px auto;
 }
