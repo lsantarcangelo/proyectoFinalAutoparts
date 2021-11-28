@@ -465,7 +465,11 @@
         }
     }
     footer{
+        position: relative;
         .wsp{
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
             height: 25px;
             width: 25px;
         }
@@ -486,10 +490,6 @@
             margin-bottom: 5px;
             padding-bottom: 5px;
             transition: scale 1000ms;
-            &:hover{
-                color: firebrick;
-                font-weight: bold;
-            }
         }
     }
     .noticias{
@@ -503,10 +503,6 @@
             text-transform: uppercase;
             height: 45px;
             padding: 6px 0;
-            &:hover{
-                color: firebrick;
-                font-weight: bold;
-            }
         }
         h3{
             font-size: 2rem;
